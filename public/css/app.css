@@ -1,0 +1,103 @@
+.centrado
+{
+	margin-top: 5px;
+}
+
+.margenformulario
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contenedor
+{
+	margin: auto;
+	margin-top: 15px;
+}
+
+.menu{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.colorfondo
+{
+	background-color: #fffffe;
+}
+
+.menulateral
+{
+	background: #2980b9;
+	height:400px;
+	width:65px;
+	border-radius:10px;
+	overflow: hidden;
+	-webkit-transition: width 0.5s;
+	-moz-transition: width 0.5s;
+	opacity:0.9;
+}
+
+div.menulateral:hover
+{
+	width:290px;
+}
+
+div#logo-principal
+{
+	height:40px;
+	width:40px;
+	margin:15px;
+	margin-left:5px;
+	background-image: url(../img/icosu2.ico);
+}
+
+div.contenedor-general
+{
+	width:240px;
+	height:40px;
+	margin-left: 5px;
+}
+
+div.logo-interior
+{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+div#icon-I{
+	background-image: url(../img/datospersonales-icon.png);
+}
+div#icon-II{
+	background-image: url(../img/insumosmedicos-icon.png);
+}
+div#icon-III{
+	background-image: url(../img/reacciones-icon.png);
+}
+div#icon-IV{
+	background-image: url(../img/concomitante-icon.png);
+}
+div#icon-V{
+	background-image: url(../img/antecedentes-icon.png);
+}
+div#icon-VI{
+	background-image: url(../img/datospersonales-icon.png);
+}
+div#icon-VII{
+	background-image: url(../img/datospersonales-icon.png);
+}
+
+p.texto-menulateral
+{
+	margin-left: 60px;
+	line-height: 40px;
+}
+
+.seleccion
+{
+	background:#fffffe;
+	opacity: 1;
+	border-radius:20px;
+}
+

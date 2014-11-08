@@ -1,0 +1,251 @@
+
+$(document).ready(function(){
+	
+	$('#II').hide();
+	$('#III').hide();
+	$('#IV').hide();
+	$('#V').hide();
+	$('#VI').hide();
+	$('#VII').hide();
+	$('#VIII').hide();
+	$('#IX').hide();
+	$('#X').hide();
+	
+	$('#item-I').addClass('seleccion');
+	
+	
+	$("#nextI").click(function(){
+		$('#I').hide();
+		$('#II').show();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').addClass('seleccion');
+	});
+	
+	$("#nextII").click(function(){
+		$('#II').hide();
+		$('#III').show();
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').addClass('seleccion');
+	});
+	
+	$("#nextIII").click(function(){
+		$('#III').hide();
+		$('#IV').show();
+		$('#item-III').removeClass('seleccion');
+		$('#item-IV').addClass('seleccion');
+	});
+	
+	$("#nextIV").click(function(){
+		$('#IV').hide();
+		$('#V').show();
+		$('#VI').show();
+		$('#VII').show();
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').addClass('seleccion');
+	});
+	
+	$("#nextVII").click(function(){
+		$('#VII').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VIII').show();
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').addClass('seleccion');
+	});
+	
+	$("#nextVIII").click(function(){
+		$('#VIII').hide();
+		$('#IX').show();
+		$('#X').show();
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').addClass('seleccion');
+	});
+	
+	$("#backII").click(function(){
+		$('#II').hide();
+		$('#I').show();
+		$('#item-II').removeClass('seleccion');
+		$('#item-I').addClass('seleccion');
+	});
+	
+	$("#backIII").click(function(){
+		$('#III').hide();
+		$('#II').show();
+		$('#item-III').removeClass('seleccion');
+		$('#item-II').addClass('seleccion');
+	});
+	
+	$("#backIV").click(function(){
+		$('#IV').hide();
+		$('#III').show();
+		$('#item-IV').removeClass('seleccion');
+		$('#item-III').addClass('seleccion');
+	});
+	
+	$("#backVII").click(function(){
+		$('#VII').hide();
+		$('#VI').hide();
+		$('#V').hide();
+		$('#IV').show();
+		$('#item-V').removeClass('seleccion');
+		$('#item-IV').addClass('seleccion');
+	});
+	
+	$("#backVIII").click(function(){
+		$('#VIII').hide();
+		$('#V').show();
+		$('#VI').show();
+		$('#VII').show();
+		$('#item-VI').removeClass('seleccion');
+		$('#item-V').addClass('seleccion');
+	});
+	
+	$("#backIX").click(function(){
+		$('#IX').hide();
+		$('#X').hide();
+		$('#VIII').show();
+		$('#item-VII').removeClass('seleccion');
+		$('#item-VI').addClass('seleccion');
+	});
+	
+	
+	$("#item-I").click(function(){
+		$('#I').show();
+		$('#II').hide();
+		$('#III').hide();
+		$('#IV').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').hide();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').addClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-II").click(function(){
+		$('#I').hide();
+		$('#II').show();
+		$('#III').hide();
+		$('#IV').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').hide();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').addClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-III").click(function(){
+		$('#I').hide();
+		$('#II').hide();
+		$('#III').show();
+		$('#IV').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').hide();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').addClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-IV").click(function(){
+		$('#I').hide();
+		$('#II').hide();
+		$('#III').hide();
+		$('#IV').show();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').hide();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').addClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-V").click(function(){
+		$('#I').hide();
+		$('#II').hide();
+		$('#III').hide();
+		$('#IV').hide();
+		$('#V').show();
+		$('#VI').show();
+		$('#VII').show();
+		$('#VIII').hide();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').addClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-VI").click(function(){
+		$('#I').hide();
+		$('#II').hide();
+		$('#III').hide();
+		$('#IV').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').show();
+		$('#IX').hide();
+		$('#X').hide();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').addClass('seleccion');
+		$('#item-VII').removeClass('seleccion');
+	});
+	
+	$("#item-VII").click(function(){
+		$('#I').hide();
+		$('#II').hide();
+		$('#III').hide();
+		$('#IV').hide();
+		$('#V').hide();
+		$('#VI').hide();
+		$('#VII').hide();
+		$('#VIII').hide();
+		$('#IX').show();
+		$('#X').show();
+		$('#item-I').removeClass('seleccion');
+		$('#item-II').removeClass('seleccion');
+		$('#item-III').removeClass('seleccion');		
+		$('#item-IV').removeClass('seleccion');
+		$('#item-V').removeClass('seleccion');
+		$('#item-VI').removeClass('seleccion');
+		$('#item-VII').addClass('seleccion');
+	});
+});
