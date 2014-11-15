@@ -9,17 +9,24 @@
 	<head>
 		<meta charset="utf-8" />
 	  	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	  	<title>SINRAIM</title>
+	  	<title>
+			SINRAIM | @section('titulo')Inicio
+			@show
+		</title>
 
 	  	<!-- FONT -->
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" /> 
 
 	  	<!-- CSS -->
-	  	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/bootstrap.css"/>		
-		<link rel="stylesheet" href="css/app.css"/>		
-		<link rel="stylesheet" href="css/texto.css"/>
-		<link rel="stylesheet" href="css/stylesMenu.css"/>
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.css"/>		
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css"/>	
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/stylesMenu.css"/>
+		@yield('css')
+		
+		<!-- JAVASCRIPT -->
+		
+		
 
 	</head>
 	
@@ -27,8 +34,9 @@
 		<header>
 			<nav id="cssmenu" class="menu">
 				<ul>
-				   <li><a href='{{URL::to('/')}}/site/inicio/'><span>Notificar</span></a></li>
-				   <li><a href='#'><span>Ver Notificaciones</span></a> </li>	
+					<li><a href='{{URL::to('/')}}'><span>Inicio</span></a></li>
+				   <li><a href='{{URL::to('/')}}/notificar'><span>Notificar</span></a></li>
+				   <li><a href='{{URL::to('/')}}/notificaciones'><span>Notificaciones</span></a> </li>	
 				</ul>
 			</nav>
 		</header>
@@ -40,15 +48,21 @@
 		</section>
 	
 		<footer>
+			<section class="footer">
+				<div class="contenedor-footer">
+					<center><p class="texto-callado creditos">SINRAIM El futuro de la prevenci&oacute;n</p></center>
+				</div>
+			</section>
 		</footer>
 		
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<script src="{{URL::to('/')}}/js/bootstrap.min.js"></script>
+		<script src="{{URL::to('/')}}/js/bootstrap.js"></script>
 		
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/agregarfila.js"></script>
+		<script src="{{URL::to('/')}}/js/jquery.js"></script>
+		<script src="{{URL::to('/')}}/js/jquery-1.9.1.min.js"></script>
+		<script src="{{URL::to('/')}}/js/app.js"></script>
+		<!--<script src="{{URL::to('/')}}/js/agregarfila.js"></script>-->
+		@yield('javascript')
 	</body>
 </html> 
 

@@ -1,5 +1,17 @@
 @extends('layouts.home')
 
+@section('titulo')
+Formulario
+@stop
+
+@section('css')
+<?php echo HTML::style('css/texto.css'); ?>
+@stop
+
+@section('javascript')
+<?php echo HTML::script('js/agregarfila.js'); ?>
+@stop
+
 @section('content')
 		
 	<div class ="container">
@@ -7,6 +19,10 @@
 			<div class="row" >
 				<label class="control-label col-lg-12 titulo text-center"> FORMULARIO DE NOTIFICACIÓN DE REACCIONES ADVERSAS A INSUMOS MÉDICO </label>
 			</div>
+			
+			@if(Session::has('mensaje'))
+				<h2> {{Session::get('mensaje')}} </h2>
+			@endif
 			
 		<div class="menulateral col-lg-3">
 			
@@ -53,7 +69,37 @@
 		<div class="col-lg-1">
 		</div>
 		
+		<!--<div class="row container" id="cssmenu">
+			<ul>
+				<li class="tam">
+					<div id="item-I"><div id = "icon-I" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-II"><div id = "icon-II" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-III"><div id = "icon-III" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-IV"><div id = "icon-IV" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-V"><div id = "icon-V" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-VI"><div id = "icon-VI" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-VII"><div id = "icon-VII" class="logo-interior"></div></div>
+				</li>
+				<li class="tam">
+					<div id="item-VIII"><div id = "icon-VIII" class="logo-interior"></div></div>
+				</li>
+			</ul>
+		</div>-->
+		
 		<div class="container">
+			{{ Form::open(array('url' => '/notificar','method'=>'post')) }}
 			<fieldset class="container col-lg-8 has-success">	
 				
 				<div id="I">											
@@ -62,41 +108,46 @@
 					<div class="row margenformulario">				
 						<label class="centrado control-label col-md-3">No. Expediente</label>					
 						<div class="col-md-3"> 
-							<input class="form-control" type="text" id="expediente"/>	
+							<!--<input class="form-control" type="text" id="expediente"/>-->
+							{{ Form::text('expediente',null, array('class' => 'form-control') ) }}
+							{{$errors->first("expediente")}}
 						</div>
 					</div>
 					
 					<div class = "row margenformulario">		
 						<label class="centrado control-label col-md-3">Nombre del Paciente</label>					
-						<div class="col-md-5">
-							<input class="form-control" type="text" id="nombre"/>	
+						<div class="col-md-5">								
+							{{ Form::text('nombre',null, array('class' => 'form-control') ) }}
+							{{$errors->first("nombre")}}
 						</div>
 					</div>	
 					
 					<div class = "row margenformulario">						
 						<label class="centrado control-label col-md-3">Departamento/Municipio</label>					
 						<div class="col-md-5">
-							<select class="form-control">
+							<!--<select class="form-control">
 								  <option>Diriamba, Carazo</option>
 								  <option>Managua</option>
-							</select>
+							</select>-->
+							{{Form::select('departamento', array('1' => 'Diriamba, Carazo', '2' => 'Managua'), null, array('class' => 'form-control'))}}
 						</div>											
 					</div>	
 					
 					<div class = "row margenformulario">							
 						<label class="centrado control-label col-md-3">Establecimiento de Salud</label>					
 						<div class="col-md-5">
-							<select class="form-control">
+							<!--<select class="form-control">
 								  <option>Centro de Salud de Diriamba</option>
 								  <option>Centro de Salud del Distrito III</option>
-							</select>
+							</select>-->
+							{{Form::select('centro_salud', array('1' => 'Centro de Salud de Diriamba', '2' => 'Centro de Salud del Distrito III'), null, array('class' => 'form-control'))}}
 						</div>									
 					</div>
 					
 					<div class = "row margenformulario">						
 						<label class="centrado control-label col-md-3">Edad</label>					
 						<div class="col-md-2">
-							<input class="form-control" type="text" id="edad"/>	
+							{{ Form::text('edad',null, array('class' => 'form-control') ) }}
 						</div>												
 					</div>	
 					
@@ -104,17 +155,18 @@
 					<div class = "row margenformulario">							
 						<label class="centrado control-label col-md-3">Sexo</label>
 						<div class ="col-md-3">
-							<select class="form-control">
+							<!--<select class="form-control">
 								  <option>Hombre</option>
 								  <option>Mujer</option>
-							</select>
+							</select>					-->		
+							{{Form::select('genero', array('1' => 'Hombre', '2' => 'Mujer'), null, array('class' => 'form-control'))}}
 						</div>	
 					</div>	
 					
 					<div class = "row margenformulario">							
 						<label class="centrado control-label col-md-3">Peso (Kg)</label>					
 						<div class="col-md-2">
-							<input class="form-control" type="text" id="peso"/>	
+							{{ Form::text('peso',null, array('class' => 'form-control') ) }}
 						</div>
 								
 					</div>
@@ -499,7 +551,8 @@
 				<legend>5. Comorbilidades</legend>
 				<div class = "row margenformulario">		
 					<div class= "col-lg-5">
-						<textarea class="form-control" rows="3"></textarea>
+						<!--<textarea class="form-control" rows="3"></textarea>-->
+						{{Form::textarea('comorbilidades',null, array('class' => 'form-control', 'rows' => '3'))}}
 					</div>
 				</div>
 			</div>
@@ -508,7 +561,7 @@
 				<legend>6. Antecedentes Familiares</legend>
 				<div class = "row margenformulario">		
 					<div class= "col-lg-5">
-						<textarea class="form-control" rows="3"></textarea>
+						{{Form::textarea('antecedentesfamiliares',null, array('class' => 'form-control', 'rows' => '3'))}}
 					</div>
 				</div>
 			</div>
@@ -517,7 +570,7 @@
 				<legend>7. Factores de Riesgo</legend>
 				<div class = "row margenformulario">		
 					<div class= "col-lg-5">
-						<textarea class="form-control" rows="3"></textarea>
+						{{Form::textarea('factoresriesgo',null, array('class' => 'form-control', 'rows' => '3'))}}
 					</div>
 				</div>
 				<div class = "row margenformulario">
@@ -530,7 +583,7 @@
 				<legend >8. OBSERVACIONES ADICIONALES</legend>
 				<div class = "row">		
 					<div class= "col-lg-6">
-						<textarea class="form-control" rows="9"></textarea>
+						{{Form::textarea('observaciones',null, array('class' => 'form-control', 'rows' => '9'))}}
 					</div>
 				</div>
 				<div class = "row margenformulario">
@@ -549,10 +602,11 @@
 					
 					<label class="centrado control-label col-md-2">Profesi&oacute;n</label>					
 					<div class="col-md-3"> 
-						<select class="form-control">
+						<!--<select class="form-control">
 							  <option>Doctor</option>
 							  <option>Farmaceutico</option>
-						</select>	
+						</select>	-->
+						{{Form::select('profesion', array('1' => 'Doctor', '2' => 'Farmaceutico'), null, array('class' => 'form-control'))}}
 					</div>					
 				</div> 
 				
@@ -564,10 +618,11 @@
 					
 					<label class="centrado control-label col-md-2">Especialidad</label>					
 					<div class="col-md-3"> 
-						<select class="form-control">
+						<!--<select class="form-control">
 							  <option>Cirujano</option>
 							  <option>Medico General</option>
-						</select>	
+						</select>	-->
+						{{Form::select('especialidad', array('1' => 'Cirujano', '2' => 'Medico General'), null, array('class' => 'form-control'))}}
 					</div>						
 				</div> 
 				
@@ -592,10 +647,12 @@
 				  </label>
 				</div>
 				<div id="backIX" class = "col-lg-1 btn btn-success" ><-</div>
-				<button type="button" class="btn btn-success">Enviar</button>
+				<!--<button type="button" class="btn btn-success">Enviar</button>-->
+				{{Form::submit('Enviar',['class' => 'btn btn-success'])}}
 			</div>
 			
 		</fieldset>
+		{{ Form::close() }}
 		
 	</div>
 @stop

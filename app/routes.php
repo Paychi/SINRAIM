@@ -10,8 +10,20 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+/*
 Route::get('/', function()
 {
 	return View::make('site.formulariofv');
 });
+
+Route::get('/inicio', function()
+{
+	return View::make('site.inicio');
+});
+
+Route::get('/notificacion', function()
+{
+	return View::make('site.vernotificacion');
+});
+*/
+Route::controller('/','SINRAIMController');
