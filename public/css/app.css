@@ -141,11 +141,14 @@ p.texto-menulateral
 	height: 180px;
 	width: 180px;
 	float:left;	
-	top:25px;
-	left:5px;
+	left:13%;
 	border: 10px solid #2980b9;
 	opacity:0.7;
-	border-radius:10px;
 	position:absolute;
 	background: #f4fffe;
+}
+
+.texto_header
+{
+	text-align: right;
 }

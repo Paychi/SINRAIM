@@ -30,10 +30,11 @@
 
 	</head>
 	
-	<body class="colorfondo">
+	<body class="colorfondo container">
 		<header>
-			<div>
-				{{ HTML::image('img/logo.png','logo_header',array("class"=>"logo_header"))}}
+			<div class="texto_header">
+				{{date("d-m-Y")}} | {{HTML::link("http://www.minsa.gob.ni/","Minsa Nicaragua")}} |
+				<!--{{ HTML::image('img/logo.png','logo_header',array("class"=>"logo_header"))}}-->
 				{{ HTML::image('img/banner_medicina.png','banner_header',array("class"=>"banner_header"))}}
 			</div>
 			
