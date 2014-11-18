@@ -32,6 +32,11 @@
 	
 	<body class="colorfondo">
 		<header>
+			<div>
+				{{ HTML::image('img/logo.png','logo_header',array("class"=>"logo_header"))}}
+				{{ HTML::image('img/banner_medicina.png','banner_header',array("class"=>"banner_header"))}}
+			</div>
+			
 			<nav id="cssmenu" class="menu">
 				<ul>
 					<li><a href='{{URL::to('/')}}'><span>Inicio</span></a></li>
