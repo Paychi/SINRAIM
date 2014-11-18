@@ -20,7 +20,8 @@
 	  	<!-- CSS -->
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.css"/>		
-		<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css"/>	
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css"/>			
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css"/>	
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/stylesMenu.css"/>
 		@yield('css')
 		
