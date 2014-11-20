@@ -9,7 +9,7 @@
 #cssmenu {
   line-height: 1;
     color: #fff;
-  background-color: #5cb85c;
+  background-color: #2980b9;
   border-color: #4cae4c;
   border-bottom: 2px solid #0fa1e0;
   width: auto;
@@ -22,7 +22,7 @@
 }
 #cssmenu a {
   color: #fff;
-  background-color: #5cb85c;
+  background-color: #2980b9;
   border-color: #4cae4c;
   color: #ffffff;
   display: block;
