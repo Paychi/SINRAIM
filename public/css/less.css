@@ -39,7 +39,10 @@ Inherits styles from: Default Layout.
 cols 1 2 3
 px 68 160 252 */
 @media only screen and (max-width: 767px) {
-
+.menulateral
+{
+	display:none;
+}
 
 }
 /* Wide Mobile Layout: 480px.
@@ -62,7 +65,10 @@ Overrides styles for devices with a
 device-pixel-ratio of 2+, such as iPhone 4.
 ----------------------------------------------- */
 @media only screen and (max-width: 480px) {
-
+.menulateral
+{
+	display:none;
+}
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
