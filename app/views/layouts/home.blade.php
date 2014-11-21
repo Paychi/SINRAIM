@@ -45,7 +45,7 @@
   			 </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img src="img/banner_medicina1.png" class="img-responsive">
+                {{HTML::image('img/banner_medicina1.png','banner1',array("class"=>"img-responsive"))}}
                 <div class="container ">
                   <div class="carousel-caption texto_headerbanner">
                     <h1>Sistema de notificacion Sinraim,</h1>
@@ -56,7 +56,8 @@
                 </div>
               </div>
              <div class="item">
-               <img src="img/banner_medicina2.png" class="img-responsive">
+              
+               {{HTML::image('img/banner_medicina2.png','banner2',array("class"=>"img-responsive"))}}
                <div class="container">
                  <div class="carousel-caption texto_banner1">
                    <h1>Sintema Nacional de FarmacoVigilancia</h1>
@@ -66,7 +67,7 @@
                </div>
              </div>
             <div class="item">
-               <img src="img/banner_medicina3.png" class="img-responsive">
+               {{HTML::image('img/banner_medicina3.png','banner3',array("class"=>"img-responsive"))}}
               <div class="container">
                 <div class="carousel-caption texto_headerbanner ">
                   <h1>Notificar, es tu derecho</h1>
@@ -117,22 +118,22 @@
 
         <div class="row ">
          <div class="col-md-3 text-center">
-           <img class="img-circle" src="img/principalsantiago.png">
+           {{HTML::image('img/principalsantiago.png','santiago',array("class"=>"img-circle"))}}
            <h3>Santiago Aguilar Silva</h3>
            <p>Analista, Desarrollador, programador.</p>
           </div>
          <div class="col-md-3 text-center">
-           <img class="img-circle" src="img/principalalvin.png">
+           {{HTML::image('img/principalalvin.png','alvin',array("class"=>"img-circle"))}}
            <h3>Alvin Antonio Baltodano</h3>
            <p>Analista, Desarrollador, programador.</p>           
          </div>
          <div class="col-md-3 text-center">
-           <img class="img-circle" src="img/principalmelvin.png">
+           {{HTML::image('img/principalmelvin.png','melvin',array("class"=>"img-circle"))}}
            <h3>Melvin Mendieta Mendoza</h3>
            <p>Analista, Desarrollador, programador.</p>          
          </div>
           <div class="col-md-3 text-center">
-           <img class="img-circle" src="img/principalcanales.png">
+           {{HTML::image('img/principalcanales.png','canales',array("class"=>"img-circle"))}}
            <h3>Carlos Canales Lopez</h3>
            <p>Analista, Desarrollador, programador.</p>           
          </div>

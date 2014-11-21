@@ -57,7 +57,15 @@ class SINRAIMController extends BaseController {
 	
 	public function getNotificaciones()
 	{
-			return $this->layout->content = View::make('site.vernotificacion');
+		$datos = array(
+				'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'
+			);
+			return $this->layout->content = View::make('site.notificaciones',compact("datos"));
+	}
+	
+	public function getDetalle($id=null)
+	{
+			return $this->layout->content = View::make('site.detallenotificacion',compact("id"));
 	}
 	
 	public function getAdd()

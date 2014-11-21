@@ -1,15 +1,16 @@
 @extends('layouts.home')
 
+@section('javascript')
+<?php echo HTML::script('js/paralax.js'); ?>
+<?php echo HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'); ?>
+@stop
+
 @section('content')
 		
 	
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
-<!-- JAVASCRIPT -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-     <script src="js/paralax.js"></script>
 
 
   <!-- START THE FEATURETTES -->
@@ -113,16 +114,7 @@
               </ul>
             </nav>            
         </div>
-
-         <!-- fecha y link MINSA
-               ================================================== -->
-               <div class="texto_header">
-                  {{date("d-m-Y")}} | {{HTML::link("http://www.minsa.gob.ni/","Minsa Nicaragua")}} |
-                </div>
-              
-                 <div class="col-md-12  featurette-encabezadoprincipal text-center">
-                    <h2>-Bienvenido a Sinraim-</h2>
-                 </div>
+        
        </div>
 
 @stop
