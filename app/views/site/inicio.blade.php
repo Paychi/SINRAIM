@@ -1,8 +1,8 @@
 @extends('layouts.home')
 
 @section('javascript')
-<?php echo HTML::script('js/paralax.js'); ?>
 <?php echo HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'); ?>
+<?php echo HTML::script('js/jquery-1.9.1.min.js'); ?>
 @stop
 
 @section('content')
@@ -19,34 +19,31 @@
  <div class="container marketing">
 
       <div class="col-md-12  featurette-encabezadoprincipal text-center">
-            <h2>-Bienvenido a Sinraim-</h2>
+            <h2>Bienvenido a Sinraim</h2>
        </div>
 
                
        <!-- fatures cuerpo parte 1-->
-       <div class="row" style="margin-top:130px">
+       <div class="row" style="margin-top:140px">
 
         <div class="col-md-6">
-            <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>          
+            <h2 class="featurette-heading">Departamento FV. <span class="text-muted">FarmacoVigilancia.</span></h2>
+            <p class="lead">Panificar, evaluar y desarrollar un sistema como marco de referencia en materia de medicamentos de uso humano, para valorar, procesar y emitir informacion sobre las sospechas de reacciones adversas procedentes de la industria farmaceutica.</p>          
          </div>   
           <div class="col-md-6">
-            <img  class "featurette-image pull-right" src="img/testfeatures.png">
+             {{HTML::image('img/features1.png','imagenfeatures1',array("class"=>"featurette-image pull-right"))}}
           </div>    
       </div><!-- /.row -->
 
 
-       <hr class="featurette-divider">
-
-
        <!-- fatures cuerpo parte 2-->
-       <div class=" row featurette">
+       <div class=" row featurette" style="margin-top:30px">
           <div class="col-md-6">
-            <img class="featurette-image pull-left" src="img/testfeatures2.png">
+             {{HTML::image('img/features2.png','imagenfeatures2',array("class"=>"featurette-image2 pull-left"))}}
           </div>
          <div class="col-md-6">
-            <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>          
+            <h2 class="featurette-heading">Ministerio de Salud, <span class="text-muted">Minsa Nicaragua.</span></h2>
+             <p class="lead">hacer efectivo el derecho ciudadano a la salud con equidad, con enfoque género y generacional para contribuir a reducir las iniquidades existentes, mejorar las condiciones de vida de la población nicaragüense y el desarrollo del país.</p>          
          </div>       
       </div><!-- /.row -->
   </div>
@@ -57,65 +54,48 @@
 
   <div class= "container" >
         
+      <div class="col-md-12  featurette-encabezadoprincipal text-center">
+            <h2>Pasos para enviar hoja de notificación</h2>
+       </div>
        <!-- Carousel
        ================================================== -->
-       <div id="myCarousel" class="carousel slide">
+       <div id="mislider" class="carousel slide" style="margin-top:120px">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-           <li data-target="#myCarousel" data-slide-to="1"></li>
-           <li data-target="#myCarousel" data-slide-to="2"></li>
-         </ol>
+           <li data-target="#mislider" data-slide-to="0" class="active"></li>
+           <li data-target="#mislider" data-slide-to="1"></li>
+           <li data-target="#mislider" data-slide-to="2"></li>
+          </ol>
             <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/banner_medicina1.png" class="img-responsive">
-                <div class="container ">
-                  <div class="carousel-caption texto_headerbanner">
-                    <h1>Sistema de notificacion Sinraim,</h1>
-                    <p>El futuro de la prevencion.</p>
-                    <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
-                    <p><a class="btn btn-lg btn-primary"  href='{{URL::to('/')}}/notificar'>Notificar</a>
-                  </p></pthis></div>
-                </div>
+
+              <div class="item active ">
+                {{HTML::image('img/slide1.png','pasonoti1',array("class"=>"img-responsive"))}}   
+                <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>          
               </div>
-             <div class="item">
-               <img src="img/banner_medicina2.png" class="img-responsive">
-               <div class="container">
-                 <div class="carousel-caption texto_banner1">
-                   <h1>Sintema Nacional de FarmacoVigilancia</h1>
-                   <p>pensando en la poblacion Nicaraguense</p>
-                   <p><a class="btn btn-large btn-primary" href='{{URL::to('/')}}/notificar'>Notificar</a></p>
-                 </div>
-               </div>
-             </div>
-            <div class="item">
-               <img src="img/banner_medicina3.png" class="img-responsive">
-              <div class="container">
-                <div class="carousel-caption texto_headerbanner ">
-                  <h1>Notificar, es tu derecho</h1>
-                  <p>Ministerio de Salud MINSA.</p>
-                  <p><a class="btn btn-large btn-primary" href='{{URL::to('/')}}/notificar'>Notificar</a></p>
-                </div>
+              <div class="item">
+                {{HTML::image('img/slide2.png','pasonoti2',array("class"=>"img-responsive"))}}              
               </div>
-            </div>
-          </div>
-             <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <div class="item">
+                {{HTML::image('img/slide3.png','pasonoti3',array("class"=>"img-responsive"))}}               
+              </div>      
+
+        </div>
+       
+          
+            <!-- Controls -->
+            <a href="#mislider"  class="left carousel-control" data-slide="prev">
              <span class="icon-prev"></span>
             </a>
-             <a class="right carousel-control" href="#myCarousel" data-slide="next">
+             <a href="#mislider" class="right carousel-control" data-slide="next">
               <span class="icon-next"></span>
-            </a>  
-            <nav id="cssmenu" class="menu" >
-               <ul>
-                <li><a href='{{URL::to('/')}}'><span>Inicio</span></a></li>
-                 <li><a href='{{URL::to('/')}}/notificar'><span>Notificar</span></a></li>
-                 <li><a href='{{URL::to('/')}}/notificaciones'><span>Notificaciones</span></a> </li>  
-              </ul>
-            </nav>            
-        </div>
+            </a> 
         
        </div>
+        <div class="col-md-12" style="margin-top:30px">
+             <center>{{HTML::image('img/logosinraim.png','logosinraim',array("class"=>"logosinraim"))}}<center>
+        </div>  
 
+</div>
+       
 @stop
 

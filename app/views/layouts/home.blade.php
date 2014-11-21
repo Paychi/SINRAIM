@@ -21,7 +21,8 @@
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.css"/>		
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css"/>	
-		<link rel="stylesheet" href="{{URL::to('/')}}/css/stylesMenu.css"/>
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/stylesMenu.css"/>    
+    <link rel="stylesheet" href="{{URL::to('/')}}/css/font.css"/>
 		@yield('css')
 		
 		<!-- JAVASCRIPT -->
@@ -60,7 +61,7 @@
                {{HTML::image('img/banner_medicina2.png','banner2',array("class"=>"img-responsive"))}}
                <div class="container">
                  <div class="carousel-caption texto_banner1">
-                   <h1>Sintema Nacional de FarmacoVigilancia</h1>
+                   <h1>Sistema Nacional de FarmacoVigilancia</h1>
                    <p>pensando en la poblacion Nicaraguense</p>
                    <p><a class="btn btn-large btn-primary" href='{{URL::to('/')}}/notificar'>Notificar</a></p>
                  </div>
@@ -110,30 +111,30 @@
  
 		  <!-- FOOTER -->
 
-    <footer>
+    <footer style="margin-top:80px">
       <div class="footer">
         <!-- Desarroladores-->
         <div class="container marketing">
-        <center>{{HTML::image('img/isoft.png','logo iSoft Corporations',array("class"=>"featurette-image"))}}</center>
+        <center>{{HTML::image('img/isoft.png','logo iSoft Corporations',array("class"=>"footer-image"))}}</center>
 
         <div class="row ">
          <div class="col-md-3 text-center">
-           {{HTML::image('img/principalsantiago.png','santiago',array("class"=>"img-circle"))}}
+           {{HTML::image('img/desarrollosantiago.png','santiago',array("class"=>"img-circle"))}}
            <h3>Santiago Aguilar Silva</h3>
            <p>Analista, Desarrollador, programador.</p>
           </div>
          <div class="col-md-3 text-center">
-           {{HTML::image('img/principalalvin.png','alvin',array("class"=>"img-circle"))}}
+           {{HTML::image('img/desarrolloalvin.png','alvin',array("class"=>"img-circle"))}}
            <h3>Alvin Antonio Baltodano</h3>
            <p>Analista, Desarrollador, programador.</p>           
          </div>
          <div class="col-md-3 text-center">
-           {{HTML::image('img/principalmelvin.png','melvin',array("class"=>"img-circle"))}}
+           {{HTML::image('img/desarrollomelvin.png','melvin',array("class"=>"img-circle"))}}
            <h3>Melvin Mendieta Mendoza</h3>
            <p>Analista, Desarrollador, programador.</p>          
          </div>
           <div class="col-md-3 text-center">
-           {{HTML::image('img/principalcanales.png','canales',array("class"=>"img-circle"))}}
+           {{HTML::image('img/desarrollocanales.png','canales',array("class"=>"img-circle"))}}
            <h3>Carlos Canales Lopez</h3>
            <p>Analista, Desarrollador, programador.</p>           
          </div>

@@ -211,7 +211,7 @@ p.texto-menulateral
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 540px;
+  height: 550px;
   background-color:#555;
 }
 .carousel img {
@@ -239,10 +239,11 @@ p.texto-menulateral
   margin-bottom: 10px;
 }
 .marketing h3 {
-  font-family: arial;
-  font-size: 20px;
+  font-family: Walkway_SemiBold;
+  font-size: 22px;
   color: #f39c12;
-  font-weight: normal;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .marketing .col-lg-4 p {
@@ -262,13 +263,31 @@ p.texto-menulateral
   padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
+
 .featurette-image {
-  margin-top: 10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-top: 10px; /* fotos principal. */
+  height: 230px;
+  width: 550px;
+  margin-bottom: 15px;
+}
+.featurette-image2 {
+  margin-top: 10px; /* fotos principal. */
+  height: 335px;
+  width: 449px;
+  margin-bottom: 15px;
+}
+
+.footer-image {
+   /* logo isoft. */
   height: 140px;
   width: 300px;
   margin-bottom: 15px;
 }
-
+.logosinraim {
+ /* logo sinraim. */
+  height: 140px;
+  width: 280px;
+}
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
@@ -288,9 +307,11 @@ p.texto-menulateral
 
 /* encabezado principal features */
 .featurette-encabezadoprincipal {
-  font-family: trebuchet;
-  font-size: 19px;
-  color: #3B88B6;
+  font-size: 50px;
+  font-family: Walkway_SemiBold;
+  font-weight: bold;
+  color: #404148;
+  letter-spacing: 4px;
 }
 
 /* encabezado principal features */
@@ -299,11 +320,6 @@ p.texto-menulateral
   font-size: 30px;
   color: #16a085;
 }
-
-
-/* SLIDER PASOS DE NOTIFICACION
--------------------------------------------------- */
-
 
 
 
