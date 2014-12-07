@@ -68,6 +68,11 @@ class SINRAIMController extends BaseController {
 			return $this->layout->content = View::make('site.detallenotificacion',compact("id"));
 	}
 	
+	public function getGaleria()
+	{
+		return $this->layout->content = View::make('site.visorimage');
+	}
+	
 	public function getAdd()
 	{
 		return $this->layout->content = View::make('site.add');

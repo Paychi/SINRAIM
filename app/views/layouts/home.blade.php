@@ -22,7 +22,9 @@
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/bootstrap.css"/>		
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css"/>	
 		<link rel="stylesheet" href="{{URL::to('/')}}/css/stylesMenu.css"/>    
-    <link rel="stylesheet" href="{{URL::to('/')}}/css/font.css"/>
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css"/>
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/base.css"/>
+		<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css"/>
 		@yield('css')
 		
 		<!-- JAVASCRIPT -->
@@ -91,6 +93,7 @@
                 <li><a href='{{URL::to('/')}}'><span>Inicio</span></a></li>
                  <li><a href='{{URL::to('/')}}/notificar'><span>Notificar</span></a></li>
                  <li><a href='{{URL::to('/')}}/notificaciones'><span>Notificaciones</span></a> </li>  
+                 <li><a href='{{URL::to('/')}}/galeria'><span>Reacciones Adversas</span></a> </li> 
               </ul>
             </nav>   
           

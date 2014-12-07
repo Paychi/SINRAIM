@@ -476,7 +476,7 @@ Formulario
 					</fieldset>
 					
 					<fieldset>
-						<h2 class="fs-title">ANTRCEDENTES</h2>
+						<h2 class="fs-title">ANTECEDENTES</h2>
 						
 						<h3 class="fs-subtitle">Comorbilidades</h3>
 						<div class = "row margenformulario">		
